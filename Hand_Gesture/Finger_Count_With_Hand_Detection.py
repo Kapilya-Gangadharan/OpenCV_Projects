@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import streamlit as st
 # test
-#test2
+# test2
 # Used to convert protobuf message to a dictionary.
 from google.protobuf.json_format import MessageToDict
 
@@ -103,10 +103,6 @@ def detect_hands_finger_Count(img):
                     cv2.putText(img, label + ' Hand', (460, 50), cv2.FONT_HERSHEY_COMPLEX, 0.9, (0, 255, 0), 2)
 
     return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-
-
-
 
 def main():
     st.title("Hand Detection and Finger Count with Streamlit")
